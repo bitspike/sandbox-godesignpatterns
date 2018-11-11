@@ -22,7 +22,7 @@ func TestSlices1(t *testing.T) {
 	t.Logf("\n")
 
 	// Declare "new" subslice and change one item
-	t.Logf("Declare 'new' slice and change one item")
+	t.Logf("Declare 'new' subslice and change one item")
 	slice2 = slice1[5:]
 	slice2[2] = 12
 	t.Logf("slice1: %+v", slice1)
@@ -37,10 +37,3 @@ func TestSlices1(t *testing.T) {
 	t.Logf("slice2: %+v", slice2)
 	t.Logf("\n")
 }
-
-// // TestClosures2 is a testcase about how closure context(reference) is handled
-// func TestClosures2(t *testing.T) {
-// 	// Second run of closures
-// 	t.Logf("Running add5(3): %d", add5(3))
-// 	t.Logf("Running add10(3): %d", add10(3))
-// }
